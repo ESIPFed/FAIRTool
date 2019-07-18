@@ -1,0 +1,413 @@
+@prefix schema:  <https://schema.org/> .
+@prefix cc:      <https://creativecommons.org/ns#> .
+@prefix void:    <http://rdfs.org/ns/void#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix protege:  <http://protege.stanford.edu/plugins/owl/protege#> .
+@prefix swrl:    <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb:   <http://www.w3.org/2003/11/swrlb#> .
+@prefix datacite:  <http://purl.org/spar/datacite/> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard:   <http://www.w3.org/2006/vcard/ns#> .
+@prefix default:  <http://fairtoo.org/Ont/fair-Ont.owl#> .
+@prefix xsp:     <http://www.owl-ontologies.com/2005/08/07/xsp.owl#> .
+@prefix dct:     <http://purl.org/dc/terms/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype:  <http://purl.org/dc/dcmitype/> .
+@prefix dcat:    <http://www.w3.org/ns/dcat#> .
+@prefix odrl:    <http://www.w3.org/ns/odrl/2/> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+
+default:fairnessScore
+      a       owl:DatatypeProperty .
+
+void:triples
+      a       owl:DatatypeProperty ;
+      rdfs:domain dcat:Dataset ;
+      rdfs:range xsd:int .
+
+dct:RightsStatement
+      a       owl:Class .
+
+dcat:byteSize
+      a       owl:DatatypeProperty ;
+      rdfs:domain dcat:Distribution ;
+      rdfs:range xsd:string .
+
+void:target
+      a       owl:ObjectProperty ;
+      rdfs:domain void:Linkset ;
+      rdfs:range dcat:Dataset .
+
+foaf:Document
+      a       owl:Class .
+
+dcat:contactPoint
+      a       owl:ObjectProperty ;
+      rdfs:domain dcat:Dataset ;
+      rdfs:range
+              [ a       owl:Class ;
+                owl:unionOf (vcard:Kind prov:Agent foaf:Agent)
+              ] .
+
+<http://fairtoo.org/Ont/fair-Ont.owl>
+      a       owl:Ontology .
+
+prov:Entity
+      a       owl:Class .
+
+prov:wasGeneratedBy
+      a       owl:ObjectProperty ;
+      rdfs:domain dcat:Dataset ;
+      rdfs:range prov:Activity .
+
+schema:identifier
+      a       owl:DatatypeProperty ;
+      rdfs:domain dcat:Dataset ;
+      rdfs:range xsd:string .
+
+prov:wasAssociatedWith
+      a       owl:ObjectProperty ;
+      rdfs:domain prov:Activity ;
+      rdfs:range
+              [ a       owl:Class ;
+                owl:unionOf (prov:Agent foaf:Agent)
+              ] .
+
+dct:description
+      a       owl:DatatypeProperty ;
+      rdfs:domain
+              [ a       owl:Class ;
+                owl:unionOf (dcat:Distribution dcat:CatalogRecord dcat:Catalog dcat:Dataset)
+              ] ;
+      rdfs:range xsd:string .
+
+dct:PeriodOfTime
+      a       owl:Class .
+
+dcat:record
+      a       owl:ObjectProperty ;
+      rdfs:domain dcat:Catalog ;
+      rdfs:range dcat:CatalogRecord .
+
+vcard:Kind
+      a       owl:Class .
+
+void:subset
+      a       owl:ObjectProperty ;
+      rdfs:domain dcat:Dataset ;
+      rdfs:range
+              [ a       owl:Class ;
+                owl:unionOf (void:Linkset dcat:Dataset)
+              ] .
+
+dcat:landingPage
+      a       owl:ObjectProperty ;
+      rdfs:domain dcat:Dataset ;
+      rdfs:range foaf:Document .
+
+prov:Agent
+      a       owl:Class ;
+      rdfs:label ""^^xsd:string .
+
+dcat:Dataset
+      a       owl:Class .
+
+dct:temporal
+      a       owl:ObjectProperty ;
+      rdfs:domain dcat:Dataset ;
+      rdfs:range dct:PeriodOfTime .
+
+foaf:name
+      a       owl:DatatypeProperty ;
+      rdfs:domain
+              [ a       owl:Class ;
+                owl:unionOf (prov:Agent foaf:Agent)
+              ] ;
+      rdfs:range xsd:string .
+
+foaf:primaryTopic
+      a       owl:ObjectProperty ;
+      rdfs:domain dcat:CatalogRecord ;
+      rdfs:range dcat:Dataset .
+
+prov:Activity
+      a       owl:Class .
+
+dct:publisher
+      a       owl:ObjectProperty ;
+      rdfs:domain
+              [ a       owl:Class ;
+                owl:unionOf (dcat:Dataset dcat:Catalog)
+              ] ;
+      rdfs:range
+              [ a       owl:Class ;
+                owl:unionOf (foaf:Agent prov:Agent)
+              ] .
+
+void:Linkset
+      a       owl:Class .
+
+datacite:usesIdentifierScheme
+      a       owl:ObjectProperty ;
+      rdfs:domain datacite:Identifier ;
+      rdfs:range datacite:IdentifierScheme .
+
+prov:wasDerivedFrom
+      a       owl:ObjectProperty ;
+      rdfs:domain dcat:Dataset ;
+      rdfs:range prov:Entity .
+
+dcat:CatalogRecord
+      a       owl:Class .
+
+odrl:Policy
+      a       owl:Class .
+
+dcat:mediaType
+      a       owl:ObjectProperty ;
+      rdfs:domain dcat:Distribution ;
+      rdfs:range dct:MediaTypeOrExtent ;
+      rdfs:subPropertyOf dct:format .
+
+dcat:keyword
+      a       owl:DatatypeProperty ;
+      rdfs:domain dcat:Dataset ;
+      rdfs:range xsd:string .
+
+dctype:Dataset
+      a       owl:Class .
+
+void:dataDump
+      a       owl:DatatypeProperty ;
+      rdfs:domain dcat:Dataset ;
+      rdfs:range xsd:string .
+
+void:sparqlEndpoint
+      a       owl:DatatypeProperty ;
+      rdfs:domain dcat:Dataset ;
+      rdfs:range xsd:string .
+
+foaf:Agent
+      a       owl:Class ;
+      rdfs:label ""^^xsd:string .
+
+skos:ConceptScheme
+      a       owl:Class .
+
+void:linkPredicate
+      a       owl:DatatypeProperty .
+
+dcat:distribution
+      a       owl:ObjectProperty ;
+      rdfs:domain dcat:Dataset ;
+      rdfs:range dcat:Distribution .
+
+foaf:mbox
+      a       owl:DatatypeProperty ;
+      rdfs:domain
+              [ a       owl:Class ;
+                owl:unionOf (prov:Agent foaf:Agent)
+              ] ;
+      rdfs:range xsd:string .
+
+dcat:dataset
+      a       owl:ObjectProperty ;
+      rdfs:domain dcat:Catalog ;
+      rdfs:range dcat:Dataset .
+
+dct:rights
+      a       owl:ObjectProperty ;
+      rdfs:domain
+              [ a       owl:Class ;
+                owl:unionOf (dcat:Distribution dcat:Catalog)
+              ] ;
+      rdfs:range dct:RightsStatement .
+
+skos:Concept
+      a       owl:Class .
+
+dct:Frequency
+      a       owl:Class .
+
+dct:accrualPeriodicity
+      a       owl:ObjectProperty ;
+      rdfs:domain dcat:Dataset ;
+      rdfs:range dct:Frequency .
+
+dct:spatial
+      a       owl:ObjectProperty ;
+      rdfs:domain
+              [ a       owl:Class ;
+                owl:unionOf (dcat:Catalog dcat:Dataset)
+              ] ;
+      rdfs:range dct:Location .
+
+datacite:hasIdentifier
+      a       owl:ObjectProperty ;
+      rdfs:range datacite:Identifier .
+
+prov:wasAttributedTo
+      a       owl:ObjectProperty ;
+      rdfs:domain prov:Entity ;
+      rdfs:range
+              [ a       owl:Class ;
+                owl:unionOf (prov:Agent foaf:Agent)
+              ] .
+
+dct:MediaTypeOrExtent
+      a       owl:Class .
+
+rdfs:Resource
+      a       owl:Class .
+
+dcat:themeTaxonomy
+      a       owl:ObjectProperty ;
+      rdfs:domain dcat:Catalog ;
+      rdfs:range skos:ConceptScheme .
+
+dct:format
+      a       owl:ObjectProperty ;
+      rdfs:domain dcat:Distribution ;
+      rdfs:range dct:MediaTypeOrExtent .
+
+dct:Location
+      a       owl:Class .
+
+dct:issued
+      a       owl:DatatypeProperty ;
+      rdfs:domain
+              [ a       owl:Class ;
+                owl:unionOf (dcat:Distribution dcat:CatalogRecord dcat:Catalog dcat:Dataset)
+              ] ;
+      rdfs:range xsd:date .
+
+datacite:Identifier
+      a       owl:Class .
+
+void:feature
+      a       owl:ObjectProperty ;
+      rdfs:domain dcat:Dataset ;
+      rdfs:range void:TechnicalFeature .
+
+datacite:IdentifierScheme
+      a       owl:Class .
+
+dcat:theme
+      a       owl:ObjectProperty ;
+      rdfs:domain dcat:Dataset ;
+      rdfs:range skos:Concept .
+
+dct:license
+      a       owl:ObjectProperty ;
+      rdfs:domain
+              [ a       owl:Class ;
+                owl:unionOf (dcat:Distribution dcat:Catalog dcat:Dataset)
+              ] ;
+      rdfs:range
+              [ a       owl:Class ;
+                owl:unionOf (dct:LicenseDocument odrl:Policy)
+              ] .
+
+dct:title
+      a       owl:DatatypeProperty ;
+      rdfs:domain
+              [ a       owl:Class ;
+                owl:unionOf (dcat:Dataset dcat:Catalog dcat:CatalogRecord dcat:Distribution prov:Entity prov:Activity)
+              ] ;
+      rdfs:range xsd:string .
+
+dcat:accessURL
+      a       owl:ObjectProperty ;
+      rdfs:domain dcat:Distribution ;
+      rdfs:range rdfs:Resource .
+
+prov:used
+      a       owl:ObjectProperty ;
+      rdfs:domain prov:Activity ;
+      rdfs:range prov:Entity .
+
+foaf:homepage
+      a       owl:DatatypeProperty ;
+      rdfs:domain dcat:Catalog ;
+      rdfs:range xsd:string .
+
+void:vocabulary
+      a       owl:DatatypeProperty ;
+      rdfs:domain dcat:Dataset ;
+      rdfs:range
+              [ a       owl:DataRange ;
+                owl:oneOf ("FAIR"^^xsd:string)
+              ] .
+
+dct:creator
+      a       owl:ObjectProperty ;
+      rdfs:domain
+              [ a       owl:Class ;
+                owl:unionOf (dcat:Dataset prov:Entity prov:Activity)
+              ] ;
+      rdfs:range
+              [ a       owl:Class ;
+                owl:unionOf (prov:Agent foaf:Agent)
+              ] .
+
+dct:contributor
+      a       owl:ObjectProperty ;
+      rdfs:domain
+              [ a       owl:Class ;
+                owl:unionOf (dcat:Dataset prov:Entity prov:Activity)
+              ] ;
+      rdfs:range
+              [ a       owl:Class ;
+                owl:unionOf (prov:Agent foaf:Agent)
+              ] .
+
+dct:LicenseDocument
+      a       owl:Class .
+
+skos:inScheme
+      a       owl:ObjectProperty ;
+      rdfs:domain skos:Concept ;
+      rdfs:range skos:ConceptScheme .
+
+dcat:Catalog
+      a       owl:Class .
+
+dct:identifier
+      a       owl:ObjectProperty ;
+      rdfs:domain dcat:Dataset ;
+      rdfs:range datacite:IdentifierScheme .
+
+dct:language
+      a       owl:DatatypeProperty ;
+      rdfs:domain
+              [ a       owl:Class ;
+                owl:unionOf (dcat:Catalog dcat:Dataset)
+              ] ;
+      rdfs:range xsd:string .
+
+void:TechnicalFeature
+      a       owl:Class .
+
+dct:modified
+      a       owl:DatatypeProperty ;
+      rdfs:domain
+              [ a       owl:Class ;
+                owl:unionOf (dcat:Distribution dcat:CatalogRecord dcat:Catalog dcat:Dataset)
+              ] ;
+      rdfs:range xsd:date .
+
+datacite:doi
+      a       owl:DatatypeProperty ;
+      rdfs:domain datacite:IdentifierScheme ;
+      rdfs:range xsd:string .
+
+dcat:downloadURL
+      a       owl:ObjectProperty ;
+      rdfs:domain dcat:Distribution ;
+      rdfs:range rdfs:Resource .
+
+dcat:Distribution
+      a       owl:Class .
