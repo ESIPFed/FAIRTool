@@ -33,23 +33,22 @@ The main objective of this project is to produce human/machine-readable FAIR met
 
 - The end result will be a tool that will promote the Earth science community research outputs toward better data stewardship.
 
-  - The metadata will conforms to the FAIR guiding principles as possible. 
+  - Enable the Earth science community data owners to show their dataset’s metadata in a way that conforms with the FAIR Metadata Guiding Principles.
+  
+  - Enable the Earth science community data owner to measure the FAIRness of their dataset's metadata.
+  
+  -	Enable Earth science community data consumers to search and find information about the dataset and its offered metadata.
+  
+  - Enable Earth science community data consumers to discover information (metadata) about the offered datasets and, if the data is open access, the  actual data can be retrieved.
+  
+  - Enable individual researchers or groups to evaluate and improve the FAIRness of their dataset's metadata. 
 
-  - The tool will include a metric system to measure the FAIRness components of digital data objects.
+  - Enable integration for both humans (GUI) and software agents (SPARQL end pint), e.g. Integration with Google dataset search.
 
-  - The work will strongly augment the active discussion on FAIR Principles by providing an executable pilot implementation. 
-
-  - With small adaption, the tool can be reused by a large number of data repositories in Earth science. 
-
-  - It can also be used by individual researchers or groups to evaluate and improve the FAIRness of datasets.
-
-  - In a broader perspective, FAIRness is not only limited to data objects. 
-
-  - Based on the media_type properity, we can also extend the implementation of FAIR Principles to other digital objects, such as open source software programs, articals, and any type of resources belonging to the dataset.
 
 
 # Measures of outreach and impact of project deliverables.
-
+The work will strongly augment the active discussion on FAIR Principles by providing an executable pilot implementation. 
 
 
 FAIRTool main components: 
