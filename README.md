@@ -9,8 +9,11 @@ FAIRTool (FAIRTool.org) is a framework that provides metadata conforms to FAIR p
 
 FAIRtool.org is a semantic web application that allows data creators to describe a dataset with FAIR metadata and, in the other side, allows data users to discover information (metadata) about the offered datasets and, if the data is open access, the actual data can be retrieved.
 
-The FAIRTool application is being initially developed as a stand-alone web application. However, the SPARQL endpoint of the FAIRTool can be also accessed from other applications to provide FAIR metadata accessibility of the datasets. 
+The FAIRTool application is being initially developed as a stand-alone web application. However, the SPARQL endpoint of the FAIRTool can be also accessed from other applications to provide FAIR metadata accessibility of the datasets.
 
+* The 15 FAIR principles (Wilkinson et al., 2016)
+
+![FAIR principles](https://nioo.knaw.nl/sites/default/files/FAIR%20principles.jpg)
 
 
 # Timeline
