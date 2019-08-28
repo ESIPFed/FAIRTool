@@ -25,7 +25,31 @@ The FAIRTool application is being initially developed as a stand-alone web appli
   - Aug., 2019 Project final report writing.
   - Sep. - Oct. 2019 FAIRtool.org online Beta release, accepting access requests for usernames to ESIP community
   - Nov. - Dec. 2019 Aplication tune up and final release.  
-  - Jan. - 2020 present the Earth science scientific dataset's metadata case study output at ESIP 2020 winter meeting.
+  - Jan. - 2020 Present the Earth science scientific dataset's metadata case study output at ESIP 2020 winter meeting.
+
+
+# Goals
+The main objective of this project is to produce human/machine-readable FAIR metadata for the digital data outputs of the Earth science community research. 
+
+- The end result will be a tool that will promote the Earth science community research outputs toward better data stewardship.
+
+  - The metadata will conforms to the FAIR guiding principles as possible. 
+
+  - The tool will include a metric system to measure the FAIRness components of digital data objects.
+
+  - The work will strongly augment the active discussion on FAIR Principles by providing an executable pilot implementation. 
+
+  - With small adaption, the tool can be reused by a large number of data repositories in Earth science. 
+
+  - It can also be used by individual researchers or groups to evaluate and improve the FAIRness of datasets.
+
+  - In a broader perspective, FAIRness is not only limited to data objects. 
+
+  - Based on the media_type properity, we can also extend the implementation of FAIR Principles to other digital objects, such as open source software programs, articals, and any type of resources belonging to the dataset.
+
+
+# Measures of outreach and impact of project deliverables.
+
 
 
 FAIRTool main components: 
