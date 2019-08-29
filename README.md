@@ -80,10 +80,10 @@ The FAIRTool Ontology model is a composition of DCAT, DCT, VoID, PROV, FOAF, SKO
 # FAIRTool main components 
 
 - MySql database, it holds and relates information on research output artifacts (e.g., data and software, and more).
-- Create the database
-   > mysql -u root -p
-   > CREATE DATABASE FAIRdb CHARACTER SET utf8;
-   > GRANT ALL ON FAIRdb.* TO 'fairUser'@'localhost' IDENTIFIED BY 'fairPass';
+  - Create the database
+  > mysql -u root -p
+  > CREATE DATABASE FAIRdb CHARACTER SET utf8;
+  > GRANT ALL ON FAIRdb.* TO 'fairUser'@'localhost' IDENTIFIED BY 'fairPass';
    
 - As a web application, it provides intelligence and reporting on Earth Science community research output artifacts. 
 - Through its integration to other registration systems (e.g., DOI, ORCID, CC, etc.), via APIs it produces essential information vital to FAIR metadata system.  
