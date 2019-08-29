@@ -27,7 +27,7 @@ The FAIRTool application is being initially developed as a stand-alone web appli
   - Jul., 2019 Online testing, debugging and implementation of deliverables; 
   - Jul. 18, 2019 Presenting FAIRtool.org at ESIP 2019 summer meeting.
   - Aug., 2019 Project final report writing.
-  - Sep. - Oct. 2019 FAIRtool.org online Beta release, accepting access requests for usernames to ESIP community
+  - Sep. - Oct. 2019 FAIRtool.org online Beta release.
   - Nov. - Dec. 2019 Aplication tune up and final release.  
   - Jan. - 2020 Present the Earth science scientific dataset's metadata case study output at ESIP 2020 winter meeting.
 
