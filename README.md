@@ -113,3 +113,5 @@ The FAIRTool Ontology model ![FAIRTool Otology](FAIR-turtle) is a composition of
 * Tune up and prepare for the final release Nov.-Dec., 2019.
 * Presenting use case at the ESIP 2020 winter meeting.
 * Applying for grant to elevate FAIRTool.org and introduce new functionality, e.g. integration with the Google dataset search engine.
+
+* This report will be updated constantly as the work progresses.
