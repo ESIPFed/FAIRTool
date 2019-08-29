@@ -75,6 +75,8 @@ The FAIRTool Ontology model is a composition of DCAT, DCT, VoID, PROV, FOAF, SKO
 
 ![FAIRTool Ontology](FAIR-Diagram.gif)
 
+* The represintation of selected Ontology properities aginst FAIR componants.
+
 ![FAIR-Table](FAIR-Table-Slid.png)
 
 # FAIRTool main components 
