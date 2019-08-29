@@ -53,7 +53,7 @@ The work will strongly augment the active discussion on FAIR Principles by provi
 
 - The FAIRTool poster was presented at the 2nd U.S. Semantic Technologies Symposium (US2TS 2019) that took place between March 11-13, 2019 at Duke University, Durham, North Carolina.
 
-![FAIRTool Poster] ( )
+![FAIRTool Poster](FAIR-Poster.jpg)
 
 - FAIRtool.org was presented at ESIP 2019 summer meeting.
 
