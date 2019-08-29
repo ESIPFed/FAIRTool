@@ -49,7 +49,7 @@ The main objective of this project is to produce human/machine-readable FAIR met
 
 # Measures of outreach 
 
-The work will strongly augment the active discussion on FAIR Principles by providing an executable pilot implementation.
+The work augment the active discussion on FAIR Principles by providing an executable implementation.
 
 - The FAIRTool poster was presented at the 2nd U.S. Semantic Technologies Symposium (US2TS 2019) that took place between March 11-13, 2019 at Duke University, Durham, North Carolina.
 
