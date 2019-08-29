@@ -95,7 +95,7 @@ The FAIRTool Ontology model ![FAIRTool Otology](FAIR-turtle) is a composition of
 - Apache Tomcat Web application Server
   A container that host the FAIRTool application
   
-  * Snapshot of one of the FAIRTool semantic web application forms.
+  * Snapshot of one sample of the FAIRTool semantic web application forms.
 
 ![FAIR-Interface](FAIR-Interface.png)
 
