@@ -55,12 +55,20 @@ The work will strongly augment the active discussion on FAIR Principles by provi
 
 ![FAIRTool Poster](FAIR-Poster.jpg)
 
-- FAIRtool.org was presented at ESIP 2019 summer meeting.
+# @esip.figshare.com (97 views, 16 Downloads)
 
+https://esip.figshare.com/articles/Toward_an_implementable_framework_of_FAIR_principles_for_Earth_science_data_management_and_stewardship/7949441/1
+
+# ESIP 2019 summer meeting
+
+* FAIRtool.org was presented at ESIP 2019 summer meeting.
+
+![ESIP](ESIP-2019-Summer-Slid.png)
 
 
 
 # Impact of project deliverables
+
 
 
 
