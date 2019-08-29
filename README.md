@@ -69,6 +69,8 @@ https://esip.figshare.com/articles/Toward_an_implementable_framework_of_FAIR_pri
 
 ![ESIP](ESIP-2019-Summer-Slid.png)
 
+* Recived request for coloboration.
+
 
 
 # Architecture
@@ -105,18 +107,9 @@ The FAIRTool Ontology model ![FAIRTool Otology](FAIR-turtle) is a composition of
 - FAIRTool SPARQL endpoint, it will be available to support data mining for special purpose and ad hoc needs.  
 
 
+# Future work
 
-Proposed FAIRTool Architecture: 
-
-- Data Pipeline fetched from multiple known sources via APIs, then loads into the FAIR triple datastore. 
-- FAIR-O Ontology describes the FAIR classes and the relation between classes to form a FAIR metadata of the Earth Science community research output.  
-- FAIR Triple Datastore allows storing, indexing, and hold complex relationship between entities as well as real-time  population of downstream datastores (e.g., representations for web app usage); 
-- GUI Web Application exposes FAIR metadata reports, & landing pages for FAIRTool entities sufficient to satisfy the 15 FAIR principles requirements combined with FAIRness score.
-
-Tech Selections: 
-
-- Data Pipeline: Integration APIs provided from DataCite, ORCID, Creative Commons, and others. 
-- Triple Datastore: Vitro with Jena and OpenLink’s virtuoso. 
-https://vivoweb.org/info/about-vitro   
-- Web App/GUI: Java scripts, and Freemarker. 
-- Web Server: Apache Tomcat 
+* Beta release on Sep.-Oct., 2019.
+* Tune up and prepare for final release Nov.-Dec., 2019.
+* Presinting use case on ESIP 2020 winter meeting.
+* Applying for fund to elevate FAIRTool.org and intredue new functionalites.
