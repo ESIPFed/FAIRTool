@@ -69,7 +69,9 @@ https://esip.figshare.com/articles/Toward_an_implementable_framework_of_FAIR_pri
 
 # Impact of project deliverables
 
+# Architecture
 
+![FAIRTool Ontology](ESIP-2019-Summer-Slid.png)
 
 
 FAIRTool main components: 
