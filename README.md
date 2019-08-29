@@ -90,17 +90,18 @@ The FAIRTool Ontology model is a composition of DCAT, DCT, VoID, PROV, FOAF, SKO
   > GRANT ALL ON FAIRdb.* TO 'fairUser'@'localhost' IDENTIFIED BY 'fairPass';
    
 - Semantic web application, it provides intelligence and reporting on Earth Science community research output artifacts.
-
-* Snapshot of one of the FAIRTool semantic web application forms.
+  The application was build based on Vitreo platform (https://vivoweb.org/info/about-vitro)
+  
+  
+  * Snapshot of one of the FAIRTool semantic web application forms.
 
 ![FAIR-Interface](FAIR-Interface.png)
 
 - Through its integration to other registration systems (e.g., DOI, ORCID, CC, etc.), via APIs it produces essential information vital to FAIR metadata system.
 
 
-- Through its API and SPARQL endpoint, it supports data mining for special purpose and ad hoc needs.  
-- Through linked data, it is one of the Earth science community face to the Web of Data. 
-- With small update, it can also be applied to data in other disciplines. 
+- FAIRTool SPARQL endpoint, it will be available to support data mining for special purpose and ad hoc needs.  
+
 
 
 Proposed FAIRTool Architecture: 
