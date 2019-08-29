@@ -94,6 +94,10 @@ The FAIRTool Ontology model ![FAIRTool Otology](FAIR-turtle) is a composition of
 - Semantic web application, it provides intelligence and reporting on Earth Science community research output artifacts.
   The application was built based on Vitro platform (https://vivoweb.org/info/about-vitro) and linked to mysql database to store the metadata triples.
   
+      - To install, copy / update the example-settings.xml, and run:
+      - mvn install -s example-settings.xml
+      - vitro-1.10.0.tar.gz is just the installer, resolving all dependencies from Maven central.
+      
 - Apache Tomcat Web application Server
     - A container that host the FAIRTool application
   
