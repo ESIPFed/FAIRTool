@@ -71,14 +71,20 @@ https://esip.figshare.com/articles/Toward_an_implementable_framework_of_FAIR_pri
 
 # Architecture
 
-The FAIRTool Ontology model is a composition of DCAT, DCT, VoID, PROV, FOAF, SKOS Schema.org,CompNet, and ODRL 
+The FAIRTool Ontology model is a composition of DCAT, DCT, VoID, PROV, FOAF, SKOS Schema.org, CompNet, and ODRL 
 
 ![FAIRTool Ontology](FAIR-Diagram.gif)
 
 
-FAIRTool main components: 
 
-- As a database, it holds and relates information on research output artifacts (e.g., data and software, and more),  
+# FAIRTool main components 
+
+- MySql database, it holds and relates information on research output artifacts (e.g., data and software, and more).
+- Create the database
+   > mysql -u root -p
+   > CREATE DATABASE FAIRdb CHARACTER SET utf8;
+   > GRANT ALL ON FAIRdb.* TO 'fairUser'@'localhost' IDENTIFIED BY 'fairPass';
+   
 - As a web application, it provides intelligence and reporting on Earth Science community research output artifacts. 
 - Through its integration to other registration systems (e.g., DOI, ORCID, CC, etc.), via APIs it produces essential information vital to FAIR metadata system.  
 - Through its API and SPARQL endpoint, it supports data mining for special purpose and ad hoc needs.  
