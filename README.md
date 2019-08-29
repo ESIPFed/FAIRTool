@@ -71,7 +71,9 @@ https://esip.figshare.com/articles/Toward_an_implementable_framework_of_FAIR_pri
 
 # Architecture
 
-![FAIRTool Ontology](ESIP-2019-Summer-Slid.png)
+The FAIRTool Ontology model is a composition of DCAT, DCT, VoID, PROV, FOAF, SKOS Schema.org,CompNet, and ODRL 
+
+![FAIRTool Ontology](FAIR-Diagram.gif)
 
 
 FAIRTool main components: 
