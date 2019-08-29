@@ -73,7 +73,7 @@ https://esip.figshare.com/articles/Toward_an_implementable_framework_of_FAIR_pri
 
 # Architecture
 
-The FAIRTool Ontology model is a composition of DCAT, DCT, VoID, PROV, FOAF, SKOS Schema.org, CompNet, and ODRL 
+The FAIRTool Ontology model ![FAIRTool Otology](FAIR-turtle) is a composition of DCAT, DCT, VoID, PROV, FOAF, SKOS Schema.org, CompNet, and ODRL 
 
 ![FAIRTool Ontology](FAIR-Diagram.gif)
 
@@ -87,10 +87,10 @@ The FAIRTool Ontology model is a composition of DCAT, DCT, VoID, PROV, FOAF, SKO
   - Create the database
   > mysql -u root -p
   > CREATE DATABASE FAIRdb CHARACTER SET utf8;
-  > GRANT ALL ON FAIRdb.* TO 'fairUser'@'localhost' IDENTIFIED BY 'fairPass';
+ 
    
 - Semantic web application, it provides intelligence and reporting on Earth Science community research output artifacts.
-  The application was build based on Vitro platform (https://vivoweb.org/info/about-vitro) and linked to mysql data base to store the triples.
+  The application was build based on Vitro platform (https://vivoweb.org/info/about-vitro) and linked to mysql database to store the triples.
   
 - Apache Tomcat Web application Server
   A container that host the FAIRTool application
