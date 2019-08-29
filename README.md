@@ -90,16 +90,16 @@ The FAIRTool Ontology model is a composition of DCAT, DCT, VoID, PROV, FOAF, SKO
   > GRANT ALL ON FAIRdb.* TO 'fairUser'@'localhost' IDENTIFIED BY 'fairPass';
    
 - Semantic web application, it provides intelligence and reporting on Earth Science community research output artifacts.
-  The application was build based on Vitro platform (https://vivoweb.org/info/about-vitro)
+  The application was build based on Vitro platform (https://vivoweb.org/info/about-vitro) and linked to mysql data base to store the triples.
   
-- Tomcat Web application Server
+- Apache Tomcat Web application Server
   A container that host the FAIRTool application
   
   * Snapshot of one of the FAIRTool semantic web application forms.
 
 ![FAIR-Interface](FAIR-Interface.png)
 
-- Through its integration to other registration systems (e.g., DOI, ORCID, CC, etc.), via APIs it produces essential information vital to FAIR metadata system.
+- Integration to other registration systems (e.g., DOI, ORCID, CC, etc.), via APIs it produces essential information vital to FAIR metadata system, e.g. DOI identifier.
 
 
 - FAIRTool SPARQL endpoint, it will be available to support data mining for special purpose and ad hoc needs.  
