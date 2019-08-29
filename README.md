@@ -3,11 +3,11 @@
 
 # Overview
 
-FAIRTool is a semantic web application to provide stewardship to Earth science research output. The tool will implement the 15 FAIR principles. The core of FAIRTool is the FAIR-O Ontology which will be built following these 15 FAIR principles. The web application will use FAIR-O Ontology to capture the properities equivilant to the 15 FAIR principle and display them as metadata. Through a technical pipeline, a score for each principle will be calculated and displayed as the FAIRness score of that research output. The created metadata record from the FAIRTool can be downloaded as RDF file. The FAIRTool can be used by both researchers and data managers, as well as other users.
+FAIRTool is a semantic web application to provide stewardship to Earth science research output. The tool will implement the 15 FAIR principles. The core of FAIRTool is the FAIR-O Ontology, which will be built following these 15 FAIR principles. The web application will use FAIR-O Ontology to capture the properties equivalent to the 15 FAIR principle and display them as metadata. Through a technical pipeline, a score for each principle will be calculated and displayed as the FAIRness score of that research output. The created metadata record from the FAIRTool can be downloaded as RDF file. The FAIRTool can be used by both researchers and data managers, as well as other users.
 
 FAIRTool (FAIRTool.org) is a framework that provides metadata conforms to FAIR principles. FAIRTool uses a composition of well-known ontologies (e.g. Schema.org, DCAT, PROV, FOAF, VOID, SKOS, VCARD, ODRL), semantic web technologies, web application, and a database for creating, storing and serving FAIR metadata of research output.
 
-FAIRtool.org is a semantic web application that allows data creators to describe a dataset with FAIR metadata and, in the other side, allows data users to discover information (metadata) about the offered datasets and, if the data is open access, the actual data can be retrieved.
+FAIRtool.org is a semantic web application that allows data creators describe a dataset with FAIR metadata and, in the other side, allows data users to discover information (metadata) about the offered datasets and, if the data are open access, the actual data can be retrieved.
 
 The FAIRTool application is being initially developed as a stand-alone web application. However, the SPARQL endpoint of the FAIRTool can be also accessed from other applications to provide FAIR metadata accessibility of the datasets.
 
@@ -22,14 +22,14 @@ The FAIRTool application is being initially developed as a stand-alone web appli
 
 # Timeline
 
-  - Feb.- Mar., 2019 Project plan report; Architecture design; Ontologies bulding, Application creation and integration.
+  - Feb.- Mar., 2019 Project plan report; Architecture design; Ontologies building, Application creation and integration.
   - Apr.- Jun., 2019 Write program codes; Triple store setup;  development.
   - Jul., 2019 Online testing, debugging and implementation of deliverables; 
-  - Jul. 18, 2019 Presenting FAIRtool.org at ESIP 2019 summer meeting.
+  - Jul. 18, 2019 Presenting FAIRtool.org at the ESIP 2019 summer meeting.
   - Aug., 2019 Project final report writing.
   - Sep. - Oct. 2019 FAIRtool.org online Beta release.
-  - Nov. - Dec. 2019 Aplication tune up and final release.  
-  - Jan. - 2020 Present the Earth science scientific dataset's metadata case study output at ESIP 2020 winter meeting.
+  - Nov. - Dec. 2019 Application tuneup and final release.  
+  - Jan. - 2020 Present the Earth science scientific dataset's metadata case study output at the ESIP 2020 winter meeting.
 
 
 # Goals
@@ -47,13 +47,13 @@ The main objective of this project is to produce human/machine-readable FAIR met
   
   - Enable individual researchers or groups to evaluate and improve the FAIRness of their dataset's metadata. 
 
-  - Enable integration for both humans (GUI) and software agents (SPARQL end pint), e.g. Integration with Google dataset search.
+  - Enable integration for both humans (GUI) and software agents (SPARQL endpoint), e.g. Integration with Google dataset search.
 
 
 
 # Measures of outreach 
 
-The work augment the active discussion on FAIR Principles by providing an executable implementation.
+The work augments the active discussion on FAIR Principles by providing an executable implementation.
 
 - The FAIRTool poster was presented at the 2nd U.S. Semantic Technologies Symposium (US2TS 2019) that took place between March 11-13, 2019 at Duke University, Durham, North Carolina.
 
@@ -65,11 +65,11 @@ https://esip.figshare.com/articles/Toward_an_implementable_framework_of_FAIR_pri
 
 # ESIP 2019 summer meeting
 
-* FAIRtool.org was presented at ESIP 2019 summer meeting.
+* FAIRtool.org was presented at the ESIP 2019 summer meeting.
 
 ![ESIP](ESIP-2019-Summer-Slid.png)
 
-* Recived request for coloboration.
+* Received request for collaboration.
 
 
 
@@ -79,7 +79,7 @@ The FAIRTool Ontology model ![FAIRTool Otology](FAIR-turtle) is a composition of
 
 ![FAIRTool Ontology](FAIR-Diagram.gif)
 
-* The represintation of selected Ontology properities aginst FAIR componants.
+* The representation of selected Ontology properties against FAIR components.
 
 ![FAIR-Table](FAIR-Table-Slid.png)
 
@@ -92,7 +92,7 @@ The FAIRTool Ontology model ![FAIRTool Otology](FAIR-turtle) is a composition of
  
    
 - Semantic web application, it provides intelligence and reporting on Earth Science community research output artifacts.
-  The application was build based on Vitro platform (https://vivoweb.org/info/about-vitro) and linked to mysql database to store the metadata triples.
+  The application was built based on Vitro platform (https://vivoweb.org/info/about-vitro) and linked to mysql database to store the metadata triples.
   
 - Apache Tomcat Web application Server
   A container that host the FAIRTool application
@@ -101,7 +101,7 @@ The FAIRTool Ontology model ![FAIRTool Otology](FAIR-turtle) is a composition of
 
 ![FAIR-Interface](FAIR-Interface.png)
 
-- Integration to other registration systems (e.g., DOI, ORCID, CC, etc.), via APIs it produces essential information vital to FAIR metadata system, e.g. DOI identifier.
+- Integration with other registration systems (e.g., DOI, ORCID, CC, etc.), via APIs, it produces essential information vital to the FAIR metadata system, e.g. DOI identifier.
 
 
 - FAIRTool SPARQL endpoint, it will be available to support data mining for special purpose and ad hoc needs.  
@@ -110,6 +110,6 @@ The FAIRTool Ontology model ![FAIRTool Otology](FAIR-turtle) is a composition of
 # Future work
 
 * Beta release on Sep.-Oct., 2019.
-* Tune up and prepare for final release Nov.-Dec., 2019.
-* Presinting use case on ESIP 2020 winter meeting.
-* Applying for fund to elevate FAIRTool.org and intredue new functionalites.
+* Tune up and prepare for the final release Nov.-Dec., 2019.
+* Presenting use case at the ESIP 2020 winter meeting.
+* Applying for grant to elevate FAIRTool.org and introduce new functionality, e.g. integration with the Google dataset search engine.
