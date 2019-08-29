@@ -95,7 +95,7 @@ The FAIRTool Ontology model ![FAIRTool Otology](FAIR-turtle) is a composition of
   The application was built based on Vitro platform (https://vivoweb.org/info/about-vitro) and linked to mysql database to store the metadata triples.
   
 - Apache Tomcat Web application Server
-  A container that host the FAIRTool application
+ - A container that host the FAIRTool application
   
   * Snapshot of one sample of the FAIRTool semantic web application forms.
 
