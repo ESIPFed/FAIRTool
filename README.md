@@ -15,7 +15,7 @@ The FAIRTool application is being initially developed as a stand-alone web appli
 
 ![FAIR principles](https://nioo.knaw.nl/sites/default/files/FAIR%20principles.jpg)
 
-* Snapshut of the FAIR tool semantic web application interface.
+
 
 
 
